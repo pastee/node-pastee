@@ -61,14 +61,14 @@ Pastee.prototype.retrieve = function(paste, callback, key) {
 	var context = this;
 	
 	request.get('http://paste.ee/r/' + paste, function(err, res, body) {
-		if (!err && response.statusCode == 200) {
+		if (!err && res.statusCode == 200) {
 			if (key) {
 				body = context.decrypt(body, key);
 			}
 			
 			callback(false, body);
 		} else {
-			callback('Error: HTTP Response ' + response.statusCode, false);
+			callback('Error: HTTP Response ' + res.statusCode, false);
 		}
 	});
 };
