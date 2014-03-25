@@ -1,0 +1,27 @@
+{
+  "name": "pastee",
+  "version": "0.1.0",
+  "description": "Module for interfacing with http://paste.ee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikkiii/node-pastee.git"
+  },
+  "keywords": [
+    "paste",
+    "pastebin",
+    "pastee"
+  ],
+  "author": "Nikki <nospam@nikkii.us> (http://nikkii.us/)",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/nikkiii/node-pastee/issues"
+  },
+  "dependencies": {
+    "request": ">=2.33.0",
+	"crypto-js": ">=3.1.2"
+  }
+}
