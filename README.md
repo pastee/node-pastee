@@ -34,6 +34,8 @@ paste.retrieve('paste id', function(err, res) {
 });
 ```
 
+(See example.js for more examples!)
+
 ## Extra options
 
 The following fields can be passed into an object for the first argument of paste.submit
