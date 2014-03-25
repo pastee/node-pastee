@@ -1,0 +1,6 @@
+language: node_js
+deploy:
+  api_key:
+    secure: RpOX5IQeEe4NE6RzBMvYkUOiM8auECIc13lfgl80sziaQDC8ghwv4leyhcxxO0rjUBnpoy5qeJ8zrzUBrNOpCNxrrO6RQOo8Hmh3vTSr/yqyDo5eUdNCnaQMZhzHsgpbRz1RfVZ+/rxCDYlQx1g/IQEQhG2u8kWt90bqWmjgjso=
+  email: nospam@nikkii.us
+  provider: npm
