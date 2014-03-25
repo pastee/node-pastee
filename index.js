@@ -61,7 +61,7 @@ Pastee.prototype.retrieve = function(paste, callback, key) {
 	var context = this;
 	
 	request.get('http://paste.ee/r/' + paste, function(err, res, body) {
-		if (!error && response.statusCode == 200) {
+		if (!err && response.statusCode == 200) {
 			if (key) {
 				body = context.decrypt(body, key);
 			}
