@@ -1,6 +1,6 @@
 var Pastee = require('pastee');
 
-var paste = new Pastee('api key or not set for public');
+var paste = new Pastee(); // Add a single string param to set the api key
 
 // Submit a normal paste
 paste.submit('paste contents', function(err, res) {
