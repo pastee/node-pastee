@@ -20,7 +20,7 @@ var Pastee = require('pastee');
 var paste = new Pastee('api key or not set for public');
 
 // Submit a normal paste
-paste.submit('paste contents', function(err, res) {
+paste.paste('paste contents', function(err, res) {
 	// res is a json object with "id", "link", "raw", "download" (and "key" for encrypted)
 });
 
@@ -38,7 +38,7 @@ paste.retrieve('paste id', function(err, res) {
 
 ## Extra options
 
-The following fields can be passed into an object for the first argument of paste.submit
+The following fields can be passed into an object for the first argument of paste.paste
 
 * paste
 * description
