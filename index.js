@@ -98,4 +98,6 @@ Pastee.prototype.getTimeSeconds = function(date) {
 	return date.getTime() / 1000;
 };
 
+Pastee.prototype.submit = Pastee.prototype.paste
+
 module.exports = Pastee;
