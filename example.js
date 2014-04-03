@@ -3,7 +3,7 @@ var Pastee = require('pastee');
 var paste = new Pastee(); // Add a single string param to set the api key
 
 // Submit a normal paste
-paste.submit('paste contents', function(err, res) {
+paste.paste('paste contents', function(err, res) {
 	// res is a json object with "id", "link", "raw", "download" (and "key" for encrypted)
 });
 
@@ -17,8 +17,8 @@ paste.retrieve('paste id', function(err, res) {
 });
 
 // Submit an encrypted paste
-var key = paste.submit({ paste : 'paste contents', encrypt : true }, function(err, res) {
-	// res is the same as above, but with "key", and "link" has the key appended to it (submit also returns key)
+var key = paste.paste({ paste : 'paste contents', encrypt : true }, function(err, res) {
+	// res is the same as above, but with "key", and "link" has the key appended to it (paste also returns key)
 });
 
 // Retrieve an encrypted paste
